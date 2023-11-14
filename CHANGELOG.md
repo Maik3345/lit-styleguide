@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.1.1] - 2023-11-14
+
+### Fixed
+
+- 🐛 remove the `postinstall` script
+
 ## [0.1.0] - 2023-11-14
 
 ### Added
