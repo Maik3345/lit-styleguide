@@ -2,7 +2,7 @@ import { html, TemplateResult } from 'lit';
 import '../src/lit-styleguide.js';
 
 export default {
-  title: 'LitStyleguide',
+  title: 'Lit Web Components',
   component: 'lit-styleguide',
   argTypes: {
     header: { control: 'text' },

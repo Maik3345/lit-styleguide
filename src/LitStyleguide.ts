@@ -1,6 +1,8 @@
-import { html, css, LitElement } from 'lit';
-import { property } from 'lit/decorators.js';
-
+import { LitElement, css, html } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
+import { createComponent } from '@lit/react';
+import * as React from 'react';
+@customElement('lit-styleguide')
 export class LitStyleguide extends LitElement {
   static styles = css`
     :host {
@@ -10,7 +12,7 @@ export class LitStyleguide extends LitElement {
     }
   `;
 
-  @property({ type: String }) header = 'Hey there';
+  @property({ type: String }) header = 'Hey there, from Lit!';
 
   @property({ type: Number }) counter = 5;
 
@@ -25,3 +27,15 @@ export class LitStyleguide extends LitElement {
     `;
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'lit-styleguide': LitStyleguide;
+  }
+}
+
+export const LitStyleguideComponent = createComponent({
+  tagName: 'lit-styleguide',
+  elementClass: LitStyleguide,
+  react: React,
+});

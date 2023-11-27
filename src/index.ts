@@ -1,1 +1,1 @@
-export { LitStyleguide } from './LitStyleguide.js';
+export * from './LitStyleguide.js';
