@@ -1,21 +1,21 @@
 {
-  "compilerOptions": {
-    "target": "es2018",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "noEmitOnError": true,
-    "lib": ["es2017", "dom"],
-    "strict": true,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "outDir": "dist",
-    "sourceMap": true,
-    "inlineSources": true,
-    "rootDir": "./",
-    "declaration": true,
-    "incremental": true
-  },
-  "include": ["**/*.ts"]
+	"compilerOptions": {
+		"module": "esnext",
+		"lib": ["es2017", "dom", "dom.iterable"],
+		"declaration": true,
+		"emitDeclarationOnly": true,
+		"outDir": "./types",
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"useDefineForClassFields": false
+	},
+	"include": ["src/**/*.ts"],
+	"exclude": ["src/**/*.stories.ts"], // <-- this is the line we need to add
 }
